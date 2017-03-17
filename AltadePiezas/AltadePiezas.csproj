@@ -87,6 +87,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reporteCiclo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporteCiclo.Designer.cs">
+      <DependentUpon>reporteCiclo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportePruebas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportePruebas.Designer.cs">
+      <DependentUpon>reportePruebas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeriesFinales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeriesFinales.Designer.cs">
+      <DependentUpon>SeriesFinales.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utilerias.cs" />
     <EmbeddedResource Include="AltadePiezas.resx">
       <DependentUpon>AltadePiezas.cs</DependentUpon>
@@ -113,6 +131,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="reporteCiclo.resx">
+      <DependentUpon>reporteCiclo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportePruebas.resx">
+      <DependentUpon>reportePruebas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeriesFinales.resx">
+      <DependentUpon>SeriesFinales.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

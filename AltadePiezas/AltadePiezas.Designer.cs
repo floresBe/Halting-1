@@ -37,7 +37,6 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.labelFecha = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cbHornos = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -48,6 +47,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,7 +117,7 @@
             this.button2.BackColor = System.Drawing.Color.Red;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(385, 471);
+            this.button2.Location = new System.Drawing.Point(526, 475);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(133, 39);
             this.button2.TabIndex = 16;
@@ -130,7 +130,7 @@
             this.btnAgregar.BackColor = System.Drawing.Color.White;
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.Red;
-            this.btnAgregar.Location = new System.Drawing.Point(193, 470);
+            this.btnAgregar.Location = new System.Drawing.Point(357, 475);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(133, 39);
             this.btnAgregar.TabIndex = 17;
@@ -159,16 +159,6 @@
             this.label5.Size = new System.Drawing.Size(179, 33);
             this.label5.TabIndex = 26;
             this.label5.Text = "Alta de Ciclo";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::AltadePiezas.Properties.Resources.joniwel11;
-            this.pictureBox1.Location = new System.Drawing.Point(-7, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(775, 66);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 28;
-            this.pictureBox1.TabStop = false;
             // 
             // label6
             // 
@@ -320,12 +310,22 @@
             this.label9.Text = "(Marcar si es rebraze)";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::AltadePiezas.Properties.Resources.joniwel11;
+            this.pictureBox1.Location = new System.Drawing.Point(-7, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(775, 66);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 28;
+            this.pictureBox1.TabStop = false;
+            // 
             // AltadePiezas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(690, 556);
+            this.ClientSize = new System.Drawing.Size(690, 534);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.label7);
