@@ -53,3 +53,13 @@ C:\Users\Luis Duenas\Halting\Servicio\bin\Debug\Servicio.pdb
 C:\Users\Luis Duenas\Halting\Servicio\obj\Debug\Servicio.dll
 C:\Users\Luis Duenas\Halting\Servicio\obj\Debug\Servicio.pdb
 C:\Users\Luis Duenas\Halting\Servicio\obj\Debug\Servicio.csprojResolveAssemblyReference.cache
+C:\Users\aale\Documents\Hornos y Halting\HaltingSistem\Halting-1\Servicio\bin\Debug\Servicio.dll.config
+C:\Users\aale\Documents\Hornos y Halting\HaltingSistem\Halting-1\Servicio\bin\Debug\Servicio.dll
+C:\Users\aale\Documents\Hornos y Halting\HaltingSistem\Halting-1\Servicio\bin\Debug\Servicio.pdb
+C:\Users\aale\Documents\Hornos y Halting\HaltingSistem\Halting-1\Servicio\bin\Debug\EntityFramework.dll
+C:\Users\aale\Documents\Hornos y Halting\HaltingSistem\Halting-1\Servicio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\aale\Documents\Hornos y Halting\HaltingSistem\Halting-1\Servicio\bin\Debug\EntityFramework.xml
+C:\Users\aale\Documents\Hornos y Halting\HaltingSistem\Halting-1\Servicio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\aale\Documents\Hornos y Halting\HaltingSistem\Halting-1\Servicio\obj\Debug\Servicio.csprojResolveAssemblyReference.cache
+C:\Users\aale\Documents\Hornos y Halting\HaltingSistem\Halting-1\Servicio\obj\Debug\Servicio.dll
+C:\Users\aale\Documents\Hornos y Halting\HaltingSistem\Halting-1\Servicio\obj\Debug\Servicio.pdb

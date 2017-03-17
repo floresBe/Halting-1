@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AltadePiezas", "AltadePiezas\AltadePiezas.csproj", "{D75E31CB-A068-4B87-B93A-C7E1A2402EA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servicio", "..\Servicio\Servicio.csproj", "{1593CF0B-15AE-4AB0-8146-ECE4AE367362}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servicio", "Servicio\Servicio.csproj", "{1593CF0B-15AE-4AB0-8146-ECE4AE367362}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

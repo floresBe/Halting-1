@@ -157,8 +157,8 @@
     <None Include="Resources\joniwel11.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Servicio\Servicio.csproj">
-      <Project>{1593CF0B-15AE-4AB0-8146-ECE4AE367362}</Project>
+    <ProjectReference Include="..\Servicio\Servicio.csproj">
+      <Project>{1593cf0b-15ae-4ab0-8146-ece4ae367362}</Project>
       <Name>Servicio</Name>
     </ProjectReference>
   </ItemGroup>

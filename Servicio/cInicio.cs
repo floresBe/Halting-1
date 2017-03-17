@@ -36,12 +36,20 @@ namespace Servicio
 
         public inicio obtenerInicio()
         {
+
             List<inicio> respuesta = null;
-            using (var entidad = new MuestrasHornosEntities())
+            try
             {
-                var consultaUsuario = from c in entidad.inicio
-                                      select c;
-                respuesta = consultaUsuario.ToList();
+                using (var entidad = new MuestrasHornosEntities())
+                {
+                    var consultaUsuario = from c in entidad.inicio
+                                          select c;
+                    respuesta = consultaUsuario.ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
             }
             return respuesta.LastOrDefault();
         }
