@@ -24,7 +24,9 @@ namespace BDMuestras
         //Eventos
         private void buttonIngresar_Click(object sender, EventArgs e)
         {
-            acceder();
+            AltadePiezas.Menu menu = new AltadePiezas.Menu();
+            menu.Show();
+            //acceder();
         }
         private void textBoxUsuario_TextChanged(object sender, EventArgs e)
         {

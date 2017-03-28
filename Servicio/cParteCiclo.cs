@@ -121,14 +121,13 @@ namespace Servicio
         {
             List<string> info = new List<string>();
             List<ParteCiclo> lista = null;
-
             try
             {
                 lista = new List<ParteCiclo>();
                 using (var entidad = new MuestrasHornosEntities())
                 {
                     var consulta = from c in entidad.ParteCiclo
-                                  // where c.Horno == horno
+                                   where c.Horno == horno
                                    where c.No_Ciclo == ciclo
                                    orderby c.No_Ciclo
                                    select c;
@@ -252,7 +251,6 @@ namespace Servicio
 
             return lista;
         }
-
         public List<string> obtenerNumerosParteVaciosPorCiclo(string horno, int ciclo)
         {
             List<string> info = new List<string>();

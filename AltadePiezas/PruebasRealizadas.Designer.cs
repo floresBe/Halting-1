@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButtonNoPaso = new System.Windows.Forms.RadioButton();
+            this.radioButton2reparo = new System.Windows.Forms.RadioButton();
+            this.radioButtonReparo = new System.Windows.Forms.RadioButton();
             this.labelDefecto = new System.Windows.Forms.Label();
             this.comboBoxDefecto = new System.Windows.Forms.ComboBox();
-            this.radioButtonNo = new System.Windows.Forms.RadioButton();
+            this.radioButtonPaso = new System.Windows.Forms.RadioButton();
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.labelSeleccionarPrueba = new System.Windows.Forms.Label();
@@ -46,27 +46,27 @@
             this.LabelTitulo = new System.Windows.Forms.Label();
             this.comboBoxSerie = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxNosParte = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cbHornos = new System.Windows.Forms.ComboBox();
             this.labelFecha = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBoxCiclos = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.radioButtonNoPaso);
+            this.groupBox1.Controls.Add(this.radioButton2reparo);
+            this.groupBox1.Controls.Add(this.radioButtonReparo);
             this.groupBox1.Controls.Add(this.labelDefecto);
             this.groupBox1.Controls.Add(this.comboBoxDefecto);
-            this.groupBox1.Controls.Add(this.radioButtonNo);
+            this.groupBox1.Controls.Add(this.radioButtonPaso);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.labelSeleccionarPrueba);
@@ -80,48 +80,50 @@
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pruebas";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // radioButton3
+            // radioButtonNoPaso
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.ForeColor = System.Drawing.Color.White;
-            this.radioButton3.Location = new System.Drawing.Point(30, 122);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(158, 35);
-            this.radioButton3.TabIndex = 26;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "No aprobó";
-            this.radioButton3.UseVisualStyleBackColor = false;
+            this.radioButtonNoPaso.AutoSize = true;
+            this.radioButtonNoPaso.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.radioButtonNoPaso.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonNoPaso.ForeColor = System.Drawing.Color.White;
+            this.radioButtonNoPaso.Location = new System.Drawing.Point(30, 122);
+            this.radioButtonNoPaso.Name = "radioButtonNoPaso";
+            this.radioButtonNoPaso.Size = new System.Drawing.Size(158, 35);
+            this.radioButtonNoPaso.TabIndex = 26;
+            this.radioButtonNoPaso.TabStop = true;
+            this.radioButtonNoPaso.Text = "No aprobó";
+            this.radioButtonNoPaso.UseVisualStyleBackColor = false;
+            this.radioButtonNoPaso.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
-            // radioButton2
+            // radioButton2reparo
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(359, 79);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(140, 35);
-            this.radioButton2.TabIndex = 25;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "2da REP";
-            this.radioButton2.UseVisualStyleBackColor = false;
+            this.radioButton2reparo.AutoSize = true;
+            this.radioButton2reparo.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.radioButton2reparo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2reparo.ForeColor = System.Drawing.Color.White;
+            this.radioButton2reparo.Location = new System.Drawing.Point(359, 79);
+            this.radioButton2reparo.Name = "radioButton2reparo";
+            this.radioButton2reparo.Size = new System.Drawing.Size(140, 35);
+            this.radioButton2reparo.TabIndex = 25;
+            this.radioButton2reparo.TabStop = true;
+            this.radioButton2reparo.Text = "2da REP";
+            this.radioButton2reparo.UseVisualStyleBackColor = false;
             // 
-            // radioButton1
+            // radioButtonReparo
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(204, 79);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(149, 35);
-            this.radioButton1.TabIndex = 24;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "1era REP";
-            this.radioButton1.UseVisualStyleBackColor = false;
+            this.radioButtonReparo.AutoSize = true;
+            this.radioButtonReparo.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.radioButtonReparo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonReparo.ForeColor = System.Drawing.Color.White;
+            this.radioButtonReparo.Location = new System.Drawing.Point(204, 79);
+            this.radioButtonReparo.Name = "radioButtonReparo";
+            this.radioButtonReparo.Size = new System.Drawing.Size(149, 35);
+            this.radioButtonReparo.TabIndex = 24;
+            this.radioButtonReparo.TabStop = true;
+            this.radioButtonReparo.Text = "1era REP";
+            this.radioButtonReparo.UseVisualStyleBackColor = false;
             // 
             // labelDefecto
             // 
@@ -152,20 +154,20 @@
             this.comboBoxDefecto.TabIndex = 22;
             this.comboBoxDefecto.Visible = false;
             // 
-            // radioButtonNo
+            // radioButtonPaso
             // 
-            this.radioButtonNo.AutoSize = true;
-            this.radioButtonNo.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.radioButtonNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonNo.ForeColor = System.Drawing.Color.White;
-            this.radioButtonNo.Location = new System.Drawing.Point(30, 80);
-            this.radioButtonNo.Name = "radioButtonNo";
-            this.radioButtonNo.Size = new System.Drawing.Size(168, 35);
-            this.radioButtonNo.TabIndex = 21;
-            this.radioButtonNo.TabStop = true;
-            this.radioButtonNo.Text = "1era PASO";
-            this.radioButtonNo.UseVisualStyleBackColor = false;
-            this.radioButtonNo.CheckedChanged += new System.EventHandler(this.radioButtonNo_CheckedChanged);
+            this.radioButtonPaso.AutoSize = true;
+            this.radioButtonPaso.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.radioButtonPaso.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonPaso.ForeColor = System.Drawing.Color.White;
+            this.radioButtonPaso.Location = new System.Drawing.Point(30, 80);
+            this.radioButtonPaso.Name = "radioButtonPaso";
+            this.radioButtonPaso.Size = new System.Drawing.Size(168, 35);
+            this.radioButtonPaso.TabIndex = 21;
+            this.radioButtonPaso.TabStop = true;
+            this.radioButtonPaso.Text = "1era PASO";
+            this.radioButtonPaso.UseVisualStyleBackColor = false;
+            this.radioButtonPaso.CheckedChanged += new System.EventHandler(this.radioButtonNo_CheckedChanged);
             // 
             // label7
             // 
@@ -222,15 +224,6 @@
             this.listBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 24;
-            this.listBox1.Items.AddRange(new object[] {
-            "H001-01 PT CORE 1era PASO ",
-            "H001-01 PT TANK 1era PASO ",
-            "H001-01 PT FLANGE Y BRACKETS 1era PASO ",
-            "H001-02 PT CORE 1era PASO ",
-            "H001-02 PT TANK 1era PASO ",
-            "H001-02 PT FLANGE Y BRACKETS 2da REP",
-            "H001-02 PT CORE 1era REP ",
-            "H001-03 PT CORE 1era PASO "});
             this.listBox1.Location = new System.Drawing.Point(17, 281);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(482, 76);
@@ -312,16 +305,18 @@
             this.label8.TabIndex = 44;
             this.label8.Text = "No. Parte:";
             // 
-            // comboBox2
+            // comboBoxNosParte
             // 
-            this.comboBox2.Enabled = false;
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(167, 403);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(169, 33);
-            this.comboBox2.TabIndex = 43;
+            this.comboBoxNosParte.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.comboBoxNosParte.Enabled = false;
+            this.comboBoxNosParte.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxNosParte.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.comboBoxNosParte.FormattingEnabled = true;
+            this.comboBoxNosParte.Location = new System.Drawing.Point(167, 403);
+            this.comboBoxNosParte.Name = "comboBoxNosParte";
+            this.comboBoxNosParte.Size = new System.Drawing.Size(169, 33);
+            this.comboBoxNosParte.TabIndex = 43;
+            this.comboBoxNosParte.SelectedIndexChanged += new System.EventHandler(this.comboBoxNosParte_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -347,13 +342,14 @@
             this.cbHornos.Name = "cbHornos";
             this.cbHornos.Size = new System.Drawing.Size(169, 33);
             this.cbHornos.TabIndex = 41;
+            this.cbHornos.SelectedIndexChanged += new System.EventHandler(this.cbHornos_SelectedIndexChanged);
             // 
             // labelFecha
             // 
             this.labelFecha.AutoSize = true;
             this.labelFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFecha.ForeColor = System.Drawing.Color.White;
-            this.labelFecha.Location = new System.Drawing.Point(189, 181);
+            this.labelFecha.Location = new System.Drawing.Point(160, 180);
             this.labelFecha.Name = "labelFecha";
             this.labelFecha.Size = new System.Drawing.Size(80, 25);
             this.labelFecha.TabIndex = 40;
@@ -384,6 +380,7 @@
             this.comboBoxCiclos.Name = "comboBoxCiclos";
             this.comboBoxCiclos.Size = new System.Drawing.Size(169, 33);
             this.comboBoxCiclos.TabIndex = 38;
+            this.comboBoxCiclos.SelectedIndexChanged += new System.EventHandler(this.comboBoxCiclos_SelectedIndexChanged_1);
             // 
             // label1
             // 
@@ -395,18 +392,6 @@
             this.label1.TabIndex = 37;
             this.label1.Text = "Fecha brazing:";
             // 
-            // dateTimePicker
-            // 
-            this.dateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker.Location = new System.Drawing.Point(317, 174);
-            this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(19, 38);
-            this.dateTimePicker.TabIndex = 36;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AltadePiezas.Properties.Resources.joniwel11;
@@ -417,21 +402,35 @@
             this.pictureBox1.TabIndex = 35;
             this.pictureBox1.TabStop = false;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(282, 171);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(20, 38);
+            this.dateTimePicker1.TabIndex = 45;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
             // PruebasRealizadas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(896, 633);
+            this.ClientSize = new System.Drawing.Size(921, 647);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBoxNosParte);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cbHornos);
             this.Controls.Add(this.labelFecha);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBoxCiclos);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dateTimePicker);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.comboBoxSerie);
             this.Controls.Add(this.LabelTitulo);
@@ -461,7 +460,7 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label labelDefecto;
         private System.Windows.Forms.ComboBox comboBoxDefecto;
-        private System.Windows.Forms.RadioButton radioButtonNo;
+        private System.Windows.Forms.RadioButton radioButtonPaso;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -469,16 +468,16 @@
         private System.Windows.Forms.ComboBox comboBoxSerie;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxNosParte;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cbHornos;
         private System.Windows.Forms.Label labelFecha;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBoxCiclos;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButtonNoPaso;
+        private System.Windows.Forms.RadioButton radioButton2reparo;
+        private System.Windows.Forms.RadioButton radioButtonReparo;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

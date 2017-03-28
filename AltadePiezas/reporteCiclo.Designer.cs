@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxNosParte = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cbHornos = new System.Windows.Forms.ComboBox();
             this.labelFecha = new System.Windows.Forms.Label();
@@ -40,10 +40,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxDepartamento = new System.Windows.Forms.TextBox();
+            this.textBoxInspector = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxObservaciones = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -63,16 +63,17 @@
             this.label8.TabIndex = 53;
             this.label8.Text = "No. Parte:";
             // 
-            // comboBox2
+            // comboBoxNosParte
             // 
-            this.comboBox2.Enabled = false;
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(183, 338);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(128, 33);
-            this.comboBox2.TabIndex = 52;
+            this.comboBoxNosParte.Enabled = false;
+            this.comboBoxNosParte.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxNosParte.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.comboBoxNosParte.FormattingEnabled = true;
+            this.comboBoxNosParte.Location = new System.Drawing.Point(183, 338);
+            this.comboBoxNosParte.Name = "comboBoxNosParte";
+            this.comboBoxNosParte.Size = new System.Drawing.Size(128, 33);
+            this.comboBoxNosParte.TabIndex = 52;
+            this.comboBoxNosParte.SelectedIndexChanged += new System.EventHandler(this.comboBoxNosParte_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -98,6 +99,7 @@
             this.cbHornos.Name = "cbHornos";
             this.cbHornos.Size = new System.Drawing.Size(128, 33);
             this.cbHornos.TabIndex = 50;
+            this.cbHornos.SelectedIndexChanged += new System.EventHandler(this.cbHornos_SelectedIndexChanged);
             // 
             // labelFecha
             // 
@@ -135,6 +137,7 @@
             this.comboBoxCiclos.Name = "comboBoxCiclos";
             this.comboBoxCiclos.Size = new System.Drawing.Size(128, 33);
             this.comboBoxCiclos.TabIndex = 47;
+            this.comboBoxCiclos.SelectedIndexChanged += new System.EventHandler(this.comboBoxCiclos_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -157,6 +160,7 @@
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(19, 38);
             this.dateTimePicker.TabIndex = 45;
+            this.dateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
             // 
             // pictureBox1
             // 
@@ -189,24 +193,23 @@
             this.label4.TabIndex = 56;
             this.label4.Text = "Departamento:";
             // 
-            // textBox1
+            // textBoxDepartamento
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox1.Location = new System.Drawing.Point(542, 162);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(89, 31);
-            this.textBox1.TabIndex = 57;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBoxDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxDepartamento.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBoxDepartamento.Location = new System.Drawing.Point(542, 162);
+            this.textBoxDepartamento.Name = "textBoxDepartamento";
+            this.textBoxDepartamento.Size = new System.Drawing.Size(89, 31);
+            this.textBoxDepartamento.TabIndex = 57;
             // 
-            // textBox2
+            // textBoxInspector
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox2.Location = new System.Drawing.Point(489, 224);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(142, 31);
-            this.textBox2.TabIndex = 59;
+            this.textBoxInspector.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxInspector.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBoxInspector.Location = new System.Drawing.Point(489, 224);
+            this.textBoxInspector.Name = "textBoxInspector";
+            this.textBoxInspector.Size = new System.Drawing.Size(142, 31);
+            this.textBoxInspector.TabIndex = 59;
             // 
             // label5
             // 
@@ -219,15 +222,15 @@
             this.label5.TabIndex = 58;
             this.label5.Text = "Inspector:";
             // 
-            // textBox3
+            // textBoxObservaciones
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox3.Location = new System.Drawing.Point(354, 329);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(277, 105);
-            this.textBox3.TabIndex = 61;
+            this.textBoxObservaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxObservaciones.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBoxObservaciones.Location = new System.Drawing.Point(354, 329);
+            this.textBoxObservaciones.Multiline = true;
+            this.textBoxObservaciones.Name = "textBoxObservaciones";
+            this.textBoxObservaciones.Size = new System.Drawing.Size(277, 105);
+            this.textBoxObservaciones.TabIndex = 61;
             // 
             // label7
             // 
@@ -263,6 +266,7 @@
             this.button3.TabIndex = 63;
             this.button3.Text = "Exportar";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // textBox4
             // 
@@ -293,16 +297,16 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBoxObservaciones);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxInspector);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxDepartamento);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBoxNosParte);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cbHornos);
             this.Controls.Add(this.labelFecha);
@@ -321,7 +325,7 @@
         #endregion
 
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxNosParte;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cbHornos;
         private System.Windows.Forms.Label labelFecha;
@@ -332,10 +336,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxDepartamento;
+        private System.Windows.Forms.TextBox textBoxInspector;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxObservaciones;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

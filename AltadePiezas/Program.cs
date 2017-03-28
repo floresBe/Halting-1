@@ -29,7 +29,7 @@ namespace AltadePiezas
         [STAThread]
         static void Main()
         {
-            Utilerias.generarCodigoSerie();
+            //Utilerias.generarCodigoSerie();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             ventanaInicio = new IniciarSesion();

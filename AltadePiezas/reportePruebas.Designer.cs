@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxSerie = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.comboBoxPrueba = new System.Windows.Forms.ComboBox();
+            this.textBoxHoney = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxObservaciones = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -54,16 +54,23 @@
             this.label8.TabIndex = 55;
             this.label8.Text = "No. Serie:";
             // 
-            // comboBox2
+            // comboBoxSerie
             // 
-            this.comboBox2.Enabled = false;
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(177, 175);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(128, 33);
-            this.comboBox2.TabIndex = 54;
+            this.comboBoxSerie.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxSerie.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.comboBoxSerie.FormattingEnabled = true;
+            this.comboBoxSerie.Items.AddRange(new object[] {
+            "UM-0001-M",
+            "UM-0002-M",
+            "UM-0003-M",
+            "UM-0004-M",
+            "UM-0005-M",
+            "UM-0006-M",
+            "UM-0007-M"});
+            this.comboBoxSerie.Location = new System.Drawing.Point(177, 175);
+            this.comboBoxSerie.Name = "comboBoxSerie";
+            this.comboBoxSerie.Size = new System.Drawing.Size(128, 33);
+            this.comboBoxSerie.TabIndex = 54;
             // 
             // pictureBox1
             // 
@@ -96,25 +103,28 @@
             this.label1.TabIndex = 59;
             this.label1.Text = "Prueba:";
             // 
-            // comboBox1
+            // comboBoxPrueba
             // 
-            this.comboBox1.Enabled = false;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(177, 224);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(128, 33);
-            this.comboBox1.TabIndex = 58;
+            this.comboBoxPrueba.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxPrueba.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.comboBoxPrueba.FormattingEnabled = true;
+            this.comboBoxPrueba.Items.AddRange(new object[] {
+            "PT CORE",
+            "PT  TANK",
+            "PT FLANGE Y BRACKETS"});
+            this.comboBoxPrueba.Location = new System.Drawing.Point(177, 224);
+            this.comboBoxPrueba.Name = "comboBoxPrueba";
+            this.comboBoxPrueba.Size = new System.Drawing.Size(128, 33);
+            this.comboBoxPrueba.TabIndex = 58;
             // 
-            // textBox4
+            // textBoxHoney
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox4.Location = new System.Drawing.Point(177, 280);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(128, 31);
-            this.textBox4.TabIndex = 67;
+            this.textBoxHoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxHoney.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBoxHoney.Location = new System.Drawing.Point(177, 280);
+            this.textBoxHoney.Name = "textBoxHoney";
+            this.textBoxHoney.Size = new System.Drawing.Size(128, 31);
+            this.textBoxHoney.TabIndex = 67;
             // 
             // label9
             // 
@@ -126,15 +136,15 @@
             this.label9.TabIndex = 66;
             this.label9.Text = "No. Parte Honeywell:";
             // 
-            // textBox3
+            // textBoxObservaciones
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox3.Location = new System.Drawing.Point(324, 206);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(234, 105);
-            this.textBox3.TabIndex = 69;
+            this.textBoxObservaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxObservaciones.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBoxObservaciones.Location = new System.Drawing.Point(324, 206);
+            this.textBoxObservaciones.Multiline = true;
+            this.textBoxObservaciones.Name = "textBoxObservaciones";
+            this.textBoxObservaciones.Size = new System.Drawing.Size(234, 105);
+            this.textBoxObservaciones.TabIndex = 69;
             // 
             // label7
             // 
@@ -170,6 +180,7 @@
             this.button3.TabIndex = 71;
             this.button3.Text = "Exportar";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // reportePruebas
             // 
@@ -179,16 +190,16 @@
             this.ClientSize = new System.Drawing.Size(589, 409);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBoxObservaciones);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBoxHoney);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBoxPrueba);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBoxSerie);
             this.Name = "reportePruebas";
             this.Text = "reportePruebas";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -200,14 +211,14 @@
         #endregion
 
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxSerie;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.ComboBox comboBoxPrueba;
+        private System.Windows.Forms.TextBox textBoxHoney;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxObservaciones;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

@@ -40,14 +40,16 @@
             this.label6 = new System.Windows.Forms.Label();
             this.cbHornos = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxNosParte = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBoxNosSerie = new System.Windows.Forms.CheckedListBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBoxPiezas = new System.Windows.Forms.TextBox();
+            this.segundaPosicion = new System.Windows.Forms.ListBox();
+            this.primeraPosicion = new System.Windows.Forms.ListBox();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +60,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTimePicker.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker.Location = new System.Drawing.Point(313, 186);
+            this.dateTimePicker.Location = new System.Drawing.Point(313, 169);
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(19, 38);
             this.dateTimePicker.TabIndex = 0;
@@ -68,7 +70,7 @@
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(37, 169);
+            this.label1.Location = new System.Drawing.Point(37, 152);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(115, 72);
             this.label1.TabIndex = 2;
@@ -105,7 +107,7 @@
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(351, 244);
+            this.label3.Location = new System.Drawing.Point(351, 259);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(251, 32);
             this.label3.TabIndex = 5;
@@ -143,7 +145,7 @@
             this.labelFecha.AutoSize = true;
             this.labelFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFecha.ForeColor = System.Drawing.Color.White;
-            this.labelFecha.Location = new System.Drawing.Point(185, 193);
+            this.labelFecha.Location = new System.Drawing.Point(185, 176);
             this.labelFecha.Name = "labelFecha";
             this.labelFecha.Size = new System.Drawing.Size(80, 25);
             this.labelFecha.TabIndex = 19;
@@ -184,7 +186,7 @@
             this.cbHornos.Name = "cbHornos";
             this.cbHornos.Size = new System.Drawing.Size(169, 33);
             this.cbHornos.TabIndex = 31;
-            this.cbHornos.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cbHornos.SelectedIndexChanged += new System.EventHandler(this.cbHornos_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -197,113 +199,55 @@
             this.label8.TabIndex = 35;
             this.label8.Text = "No. Parte:";
             // 
-            // comboBox2
+            // comboBoxNosParte
             // 
-            this.comboBox2.Enabled = false;
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(163, 391);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(169, 33);
-            this.comboBox2.TabIndex = 34;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.comboBoxNosParte.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxNosParte.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.comboBoxNosParte.FormattingEnabled = true;
+            this.comboBoxNosParte.Location = new System.Drawing.Point(163, 391);
+            this.comboBoxNosParte.Name = "comboBoxNosParte";
+            this.comboBoxNosParte.Size = new System.Drawing.Size(169, 33);
+            this.comboBoxNosParte.TabIndex = 34;
+            this.comboBoxNosParte.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(351, 190);
+            this.label4.Location = new System.Drawing.Point(351, 210);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(154, 31);
             this.label4.TabIndex = 37;
             this.label4.Text = "Posiciones:";
-            // 
-            // listBox2
-            // 
-            this.listBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 25;
-            this.listBox2.Items.AddRange(new object[] {
-            "01",
-            "02",
-            "03",
-            "04",
-            "05",
-            "06",
-            "07",
-            "08",
-            "09",
-            "10"});
-            this.listBox2.Location = new System.Drawing.Point(511, 191);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(50, 29);
-            this.listBox2.TabIndex = 38;
-            // 
-            // listBox3
-            // 
-            this.listBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 25;
-            this.listBox3.Items.AddRange(new object[] {
-            "01",
-            "02",
-            "03",
-            "04",
-            "05",
-            "06",
-            "07",
-            "08",
-            "09",
-            "10"});
-            this.listBox3.Location = new System.Drawing.Point(609, 191);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(50, 29);
-            this.listBox3.TabIndex = 39;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(567, 193);
+            this.label7.Location = new System.Drawing.Point(567, 214);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(36, 25);
             this.label7.TabIndex = 40;
             this.label7.Text = ">>";
             // 
-            // checkedListBox1
+            // checkedListBoxNosSerie
             // 
-            this.checkedListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "H0001-01",
-            "H0001-02",
-            "H0001-03",
-            "H0001-04",
-            "H0001-05",
-            "H0001-06",
-            "H0001-07",
-            "H0001-08",
-            "H0001-09",
-            "H0001-10",
-            "H0001-11",
-            "H0001-12"});
-            this.checkedListBox1.Location = new System.Drawing.Point(357, 281);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(302, 108);
-            this.checkedListBox1.TabIndex = 41;
+            this.checkedListBoxNosSerie.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBoxNosSerie.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.checkedListBoxNosSerie.FormattingEnabled = true;
+            this.checkedListBoxNosSerie.Location = new System.Drawing.Point(357, 296);
+            this.checkedListBoxNosSerie.Name = "checkedListBoxNosSerie";
+            this.checkedListBoxNosSerie.Size = new System.Drawing.Size(302, 108);
+            this.checkedListBoxNosSerie.TabIndex = 41;
             // 
             // label9
             // 
             this.label9.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(352, 392);
+            this.label9.Location = new System.Drawing.Point(352, 407);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(286, 32);
             this.label9.TabIndex = 42;
@@ -320,20 +264,88 @@
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
             // 
+            // textBoxPiezas
+            // 
+            this.textBoxPiezas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPiezas.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBoxPiezas.Location = new System.Drawing.Point(511, 169);
+            this.textBoxPiezas.Name = "textBoxPiezas";
+            this.textBoxPiezas.Size = new System.Drawing.Size(48, 31);
+            this.textBoxPiezas.TabIndex = 43;
+            // 
+            // segundaPosicion
+            // 
+            this.segundaPosicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.segundaPosicion.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.segundaPosicion.FormattingEnabled = true;
+            this.segundaPosicion.ItemHeight = 25;
+            this.segundaPosicion.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10"});
+            this.segundaPosicion.Location = new System.Drawing.Point(609, 212);
+            this.segundaPosicion.Name = "segundaPosicion";
+            this.segundaPosicion.Size = new System.Drawing.Size(50, 29);
+            this.segundaPosicion.TabIndex = 39;
+            this.segundaPosicion.SelectedIndexChanged += new System.EventHandler(this.segundaPosicion_SelectedIndexChanged);
+            // 
+            // primeraPosicion
+            // 
+            this.primeraPosicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.primeraPosicion.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.primeraPosicion.FormattingEnabled = true;
+            this.primeraPosicion.ItemHeight = 25;
+            this.primeraPosicion.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10"});
+            this.primeraPosicion.Location = new System.Drawing.Point(511, 212);
+            this.primeraPosicion.Name = "primeraPosicion";
+            this.primeraPosicion.Size = new System.Drawing.Size(50, 29);
+            this.primeraPosicion.TabIndex = 38;
+            this.primeraPosicion.SelectedIndexChanged += new System.EventHandler(this.posicion1_SelectedIndexChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(401, 166);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(104, 31);
+            this.label10.TabIndex = 44;
+            this.label10.Text = "Piezas:";
+            // 
             // AltadePiezas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(690, 534);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.textBoxPiezas);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.checkedListBoxNosSerie);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.listBox3);
-            this.Controls.Add(this.listBox2);
+            this.Controls.Add(this.segundaPosicion);
+            this.Controls.Add(this.primeraPosicion);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBoxNosParte);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cbHornos);
             this.Controls.Add(this.pictureBox1);
@@ -370,13 +382,15 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cbHornos;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxNosParte;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox checkedListBoxNosSerie;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBoxPiezas;
+        private System.Windows.Forms.ListBox segundaPosicion;
+        private System.Windows.Forms.ListBox primeraPosicion;
+        private System.Windows.Forms.Label label10;
     }
 }
 
